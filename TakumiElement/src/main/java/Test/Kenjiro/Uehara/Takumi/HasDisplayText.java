@@ -1,3 +1,5 @@
+package Test.Kenjiro.Uehara.Takumi;
+
 /**
  * 表示用文字列を保持していることを表すインタフェースです。
  */
