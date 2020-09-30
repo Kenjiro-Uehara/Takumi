@@ -3,9 +3,20 @@ package Test.Kenjiro.Uehara.Takumi;
 /**
  * シンプルな匠メソッドオブジェクトの実装です。
  */
-public class SimpleTakumiObject implements HasDisplayText {
-    private final String text;
+public class SimpleTakumiObject implements TakumiObject {
+    private String text;
 
+    /**
+     * コンストラクタです。
+     */
+    public SimpleTakumiObject() {
+        this("");
+    }
+
+    /**
+     * コンストラクタです。
+     * @param text 保持する文字列の初期値
+     */
     public SimpleTakumiObject(String text) {
         this.text = text;
     }
@@ -18,5 +29,12 @@ public class SimpleTakumiObject implements HasDisplayText {
     @Override
     public String displayText() {
         return text;
+    }
+
+    /**
+     * Set text.
+     */
+    public void setText(String text) {
+        this.text = text;
     }
 }
